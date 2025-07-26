@@ -1,0 +1,69 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 40px;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+button, .back-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.back-btn {
+    background-color: #007bff;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}

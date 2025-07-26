@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ResuScan Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 ResuScan - Analysis Result</h1>
+
+        <h2>✅ Matched Skills:</h2>
+        <ul>
+            {% for skill in matched_skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>📈 Match Score: {{ match_score }}%</h2>
+
+        <h2>📄 Extracted Resume Text:</h2>
+        <p style="white-space: pre-wrap;">
+            {{ resume_text | safe }}
+        </p>
+        <h2>🎧 Voice Feedback:</h2>
+<p>{{ feedback }}</p>
+<audio controls>
+  <source src="{{ url_for('uploaded_file', filename=voice_file) }}" type="audio/mpeg">
+   Your browser does not support the audio element.
+</audio>
+
+        <!-- 📥 Download PDF Button -->
+        <form action="/download_report" method="post">
+            {% for skill in matched_skills %}
+                <input type="hidden" name="matched_skills" value="{{ skill }}">
+            {% endfor %}
+            <input type="hidden" name="match_score" value="{{ match_score }}">
+            <input type="hidden" name="resume_text" value="{{ resume_text }}">
+            <button type="submit">📥 Download PDF Report</button>
+        </form>
+
+        <!-- 🔙 Back Button -->
+        <a href="/" class="back-btn">⬅️ Back to Upload</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ResuScan Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #fff;
+            color: #000;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            white-space: pre-wrap;
+        }
+
+        hr {
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 ResuScan Report</h1>
+    <h2>✅ Matched Skills:</h2>
+    <ul>
+        {% for skill in matched_skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>📈 Match Score: {{ match_score }}%</h2>
+
+    <hr>
+
+    <h2>📄 Extracted Resume Text:</h2>
+    <pre>{{ resume_text }}</pre>
+</body>
+</html>
