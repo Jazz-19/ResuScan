@@ -1,0 +1,6 @@
+Flask
+PyPDF2
+python-docx
+xhtml2pdf
+gTTS
+gunicorn
