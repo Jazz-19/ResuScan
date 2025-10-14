@@ -25,7 +25,6 @@ Just one browser. One resume. Endless possibilities.
 -  A tech enthusiast and creative mind behind ResuScan 💖
 
 - 💼 LinkedIn:-www.linkedin.com/in/jiya-modak-21b72a32b
-- 👩‍💻 GitHub:-https://github.com/Jazz-19/ResuScan.git
 - 📬 Email:-jiyamodak1920@gmail.com
 
 ""🙌 Contributions""
