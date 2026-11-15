@@ -20,13 +20,6 @@ Just one browser. One resume. Endless possibilities.
 - 🖼 HTML/CSS - Polishes the frontend vibes 
 - 📤 xhtml2pdf - Generates the stunning PDF report 
 
-""👩‍💻 About the Creator""
-- ✨ Made with passion by "Jiya Modak"
--  A tech enthusiast and creative mind behind ResuScan 💖
-
-- 💼 LinkedIn:-www.linkedin.com/in/jiya-modak-21b72a32b
-- 📬 Email:-jiyamodak1920@gmail.com
-
 ""🙌 Contributions""
 - Feel free to fork, modify, and enhance this project.
 - PRs and feedback are always welcome! 💌
